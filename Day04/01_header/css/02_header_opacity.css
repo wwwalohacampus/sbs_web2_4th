@@ -29,7 +29,7 @@ body {
 
 header {
     width: 100%; height: 100px; padding: 0 40px; box-sizing: border-box;
-    line-height: 100px; color: #fff; background-color: rgba(96, 77, 62 0.3);
+    line-height: 100px; color: #fff; background-color: rgba(96, 77, 62, 0.3);
     position: fixed; top: 0; z-index: 100;
 }
 
@@ -55,3 +55,42 @@ header .menuOpen span {
 
 header .menuOpen span.mid { top: 50%; }
 header .menuOpen span.bot { top: 100%; }
+
+/* 타이틀  */
+header .title {
+    display: inline-block;
+    float: left;
+    margin-left: 70px;
+    height: 100%;
+    font-size: 25px;
+}
+
+/* 언어 선택 */
+header .langs {
+    float: left;
+    margin-left: 220px;
+    overflow: hidden;
+    width: 150px;
+}
+
+header .langs li { float: left; width: 50%; }
+header .langs li:nth-child(1) { font-weight: bold; }
+header .langs li:nth-child(2) { color: #ddd; }
+header .langs li a {
+    display:  block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+header .right { float: right; }
+header .right li { float: left; }
+header .right li p { letter-spacing: 1px; }
+
+section.visual img { width: 100%; }
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+ul { 
+    list-style-type: none; 
+}
+
+ul li {
+    position: relative;
+    width: 80px;
+}
+
+ul li::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
