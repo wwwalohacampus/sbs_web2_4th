@@ -175,17 +175,39 @@ section {
 
 /* 카테고리 풀다운 메뉴 */
 #gnb .gnb_sub {
-    /* display: none; */
-    display: block;
+    display: none;
+    /* display: block; */
     overflow: hidden;
     position: absolute;
     top: 55px;
     left: 0;
-    /* width: 219px; */
-    width: 450px;
+    width: 219px;
+    /* width: 450px; */
     z-index: 300;
     padding-top: 1px;
 }
+
+/* 1차 메뉴에 마우스 올렸을 때 */
+#gnb .gnb_sub:hover { 
+    animation: slideRight 0.4s; 
+    /* 애니메이션의 마지막 프레임에서 고정 */
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+    0% {}
+    100% { width: 450px; }
+}
+
+/* 1차 메뉴에 마우스 올렸을 때, 2차 메뉴 출력 */
+#gnb .gnb_sub .inner_sub ul.gnb_menu li:hover > ul.sub_menu {
+    display: block;
+}
+
+#gnb .gnb_sub .inner_sub ul.gnb_menu li:hover {
+    background-color: rgb(246,246,246);
+}
+
 
 /* 1차 메뉴 */
 #gnb .gnb_sub .inner_sub {
@@ -248,8 +270,8 @@ section {
 
 /* 2차 메뉴  */
 #gnb .gnb_sub ul.sub_menu {
-    /* display: none; */
-    display: block;
+    display: none;
+    /* display: block; */
     position: absolute;
     left: 200px;
     top: 5px;
