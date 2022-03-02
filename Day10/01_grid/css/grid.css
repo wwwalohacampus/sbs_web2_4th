@@ -113,5 +113,64 @@
     ;
 }
 
+/* align-content */
+.align { height: 1000px; }
+.align-start { align-content: start; }
+.align-end { align-content: end; }
+.align-center { align-content: center; }
+.align-between { align-content: space-between; }
+.align-around { align-content: space-around; }
+.align-evenly { align-content: space-evenly; }
+.align-stretch { align-content: stretch; }
 
-/* 여기서 부터 */
+/* justify-content */
+.justify { grid-auto-flow: column; }
+.justify-start { justify-content: start; }
+.justify-end { justify-content: end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+.justify-stretch { justify-content: stretch; }
+
+/* place-content */
+.place { height: 1000px; }
+.place-center-center {
+    /* align-content    justify-content */
+    /* 컨텐츠 수직정렬   컨텐츠 수평정렬 */
+    place-content: center center;
+}
+
+/* items */
+.items {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    background-color: cornflowerblue;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* align-items */
+.align-items-start { align-items: start; }
+.align-items-end { align-items: end; }
+.align-items-center { align-items: center; }
+.align-items-stretch { align-items: stretch; }
+.align-items-stretch .items { height: auto; }
+
+/* justify-items */
+.justify-items-start { justify-items: start; }
+.justify-items-end { justify-items: end; }
+.justify-items-center { justify-items: center; }
+.justify-items-stretch { justify-items: stretch; }
+.justify-items-stretch .items { width: auto; }
+
+/* place-items */
+.place-items-center {
+    /* align-items    justify-items */
+    /* 아이템 수직정렬   아이템 수평정렬 */
+    place-items: center center;
+}
