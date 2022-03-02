@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 공통 */
+html {}
+
+body { }
+
+/* 포인트 폰트 */
+.title { font-family: 'Hi Melody', cursive; }
+
+/* 전체영역 */
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* 제목 */
+.page-title { font-size: 5rem; margin: 40px; }
+/* 소제목 */
+.sub-title {
+    font-size: 1.4rem;
+    padding: 0 8px 8px;
+}
+
+/* 헤더 */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* 메뉴 */
+.main-nav { 
+    display: flex; 
+    align-items: center;    /* 수직 가운데 (한 줄) */
+    height: 100%;
+    font-size: 1.3rem; 
+}
+.main-nav li { margin-left: 36px; }
+.main-nav li a { color: rosybrown; }
+.main-nav li a:hover { color: hotpink; }
+
+
+/* 이어서 보겠습니다! */
