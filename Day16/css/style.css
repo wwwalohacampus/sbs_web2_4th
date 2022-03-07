@@ -1,0 +1,57 @@
+
+header { 
+    width: 100%; 
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    border-bottom: 1px solid #eee;
+    z-index: 10;
+}
+
+header .inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header .inner .logo-box {}
+header .inner .logo-box .logo {
+    display: block;
+    width: 158px;
+    height: 70px;
+    background: url(../img/logo.svg) 50% 50% / 158px 40px no-repeat;
+}
+
+header .inner .gnb { margin-left: 30px; }
+header .inner .gnb nav {}
+header .inner .gnb nav ul { display: flex;}
+header .inner .gnb nav ul li { margin-right: 30px; }
+header .inner .gnb nav ul li a { 
+    display: block; font-size: 1.2em; line-height: 1.2em;
+    color: black; font-weight: 700;
+}
+
+header .inner .util { display: flex; justify-content: flex-end; margin-left: 70px; }
+header .inner .util .util-left { font-size: 15px; }
+header .inner .util .util-left ul { display: flex; align-items: center; }
+header .inner .util .util-left ul li { margin-right: 15px; line-height: 20px; }
+header .inner .util .util-left ul li a { font-weight: 600; }
+header .inner .util .util-left ul li a.point { color: #f44502; }
+
+header .inner .util .util-right { font-size: 16px; line-height: 20px; }
+header .inner .util .util-right a.join { margin-right: 15px; }
+header .inner .util .util-right a.login {
+    padding: 10px 14px;
+    background-color: #f44502;
+    border-radius: 12px;
+    color: white;
+}
+
+
+
