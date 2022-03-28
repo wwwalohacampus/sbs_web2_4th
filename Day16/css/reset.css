@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*reset*/
 * {margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,5 +29,20 @@ address, em, i {font-style: normal;}
 a:focus {outline: none}
 button:focus {outline: none}
 
-body { font-family: 'Noto Sans KR', sans-serif }
-.ft-gm { font-family: 'GmarketSansMedium', sans-serif; }
+body { 
+    /* font-family: 'Noto Sans KR', sans-serif  */
+    font-family: 'GmarketSansMedium', sans-serif; 
+}
+.ft-gm { 
+    font-family: 'GmarketSansMedium', sans-serif; 
+}
+
+.ft-gm-bold { 
+    font-family: 'GmarketSansBold', sans-serif; 
+}
+
+/* 글씨 드래그 시, 상태를 지정하는 선택자 */
+::selection {
+    background-color: #f44502;
+    color: white;
+}
